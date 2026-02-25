@@ -98,7 +98,7 @@ def write_summary_csv(out_filename, avg_prices):
     pass
 
 ###############################################################################
-##### UNIT TESTS (Do not modify the code below!)
+#### UNIT TESTS (Do not modify the code below!)
 ###############################################################################
 class TestAirbnbListings(unittest.TestCase):
     def setUp(self):
