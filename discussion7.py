@@ -2,7 +2,7 @@ import unittest
 import os
 import csv
 
-##############################################################################
+###############################################################################
 ##### TASK 1: CSV READER
 ###############################################################################
 def load_listings(f):
@@ -31,6 +31,10 @@ def load_listings(f):
     full_path = os.path.join(base_path, f)
 
     # TODO: Read the CSV using csv.reader and convert it to a list a dictionaries
+    with open(full_path, newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        listings = [dict(row) for row in reader]
+    return listings
     pass
 
 ###############################################################################
